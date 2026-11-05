@@ -1,0 +1,29 @@
+{
+  "name": "fact_order_line",
+  "primary_key": ["order_line_key"],
+  "columns": {
+    "order_line_key": "NUMBER",
+    "order_number": "VARCHAR",
+    "line_number": "NUMBER",
+    "date_key": "NUMBER",
+    "store_key": "NUMBER",
+    "customer_key": "NUMBER",
+    "channel_key": "NUMBER",
+    "product_key": "NUMBER",
+    "currency_key": "NUMBER",
+    "quantity": "NUMBER(12,3)",
+    "unit_price": "NUMBER(18,2)",
+    "discount_amount": "NUMBER(18,2)",
+    "gross_amount": "NUMBER(18,2)",
+    "vat_amount": "NUMBER(18,2)",
+    "net_amount": "NUMBER(18,2)",
+    "net_amount_aed": "NUMBER(18,2)",
+    "load_date": "DATE"
+  },
+  "constraints": {
+    "quantity": { "min": 0 },
+    "gross_amount": { "min": 0 },
+    "net_amount": { "min": 0 },
+    "net_amount_aed": { "min": 0 }
+  }
+}
